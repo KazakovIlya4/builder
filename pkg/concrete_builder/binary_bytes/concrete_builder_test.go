@@ -22,7 +22,7 @@ func TestBinaryRunes_Encode(t *testing.T) {
 	message, err := builder.Message()
 	assert.Equal(t, nil, err)
 	assert.Equal(t, message.Encoding(), "binary")
-	assert.Equal(t, message.Symbol(), "rune")
+	assert.Equal(t, message.Symbol(), "byte")
 	assert.Equal(t, textBinaryBytesShortTest, message.Get())
 }
 
